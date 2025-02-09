@@ -12,12 +12,13 @@ public class Desarrollador extends Empleado {
     private String lenguajeProgamacion = null;
 
     public void programar(){
-
+        System.out.println(getNombre() + " esta programando " + getLenguajeProgamacion());
     }
 
     @Override
     public void mostrarDetalles(){
-
+        super.mostrarDetalles();
+        System.out.println("Lenguaje: " + getLenguajeProgamacion() + "Desarrollador" );
     }
 
     @Override
@@ -25,4 +26,14 @@ public class Desarrollador extends Empleado {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'calcularSalario'");
     }
+
+    public String getLenguajeProgamacion() {
+        return lenguajeProgamacion;
+    }
+
+    public void setLenguajeProgamacion(String lenguajeProgamacion) {
+        this.lenguajeProgamacion = lenguajeProgamacion;
+    }
+
+    
 }

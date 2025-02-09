@@ -9,7 +9,7 @@ public abstract class Empleado {
     public abstract double calcularSalario();
 
     public void mostrarDetalles(){
-        System.out.println("Empleado " + nombre + "\n Edad: " + edad + "\n Salario base: " + salarioBase + "\n Departmento: " + departamento);
+        System.out.println("Empleado " + nombre + "\nEdad: " + edad + "\nSalario base: " + salarioBase + "\nDepartmento: " + departamento);
     }
 
     public Empleado(String nombre, int edad, double salarioBase, String departamento) {
