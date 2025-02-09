@@ -16,7 +16,7 @@ public class Gerente extends Empleado{
 
     @Override
     public void mostrarDetalles(){
-
+        System.out.println("Gerente: " + getNombre() + "\n Edad: " + getEdad() + "\n Departameto: " + getDepartamento() + "\n Salario con bono: " + calcularSalario());
     }
 
     public double getBono() {
